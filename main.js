@@ -311,20 +311,6 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 // 지도를 생성합니다    
 var map = new kakao.maps.Map(mapContainer, mapOption); 
 
-// 장소 검색 객체를 생성합니다
-var ps = new kakao.maps.services.Places(map); 
-
-// 카테고리로 편의점을 검색합니다
-ps.categorySearch('CS2', placesSearchCB, {useMapBounds:true}); 
-
-// 키워드 검색 완료 시 호출되는 콜백함수 입니다
-function placesSearchCB (data, status, pagination) {
-    if (status === kakao.maps.services.Status.OK) {
-        for (var i=0; i<data.length; i++) {
-            displayMarker(data[i]);    
-        }       
-    }
-}
 
 // 현재위치를 받아옴
 // HTML5의 geolocation으로 사용할 수 있는지 확인합니다 
@@ -348,6 +334,22 @@ if (navigator.geolocation) {
     var locPosition = new kakao.maps.LatLng(33.450701, 126.570667);
         alert('❌ 현재위치를 찾을 수 없습니다 ❌');
 }
+
+// 장소 검색 객체를 생성합니다
+var ps = new kakao.maps.services.Places(map); 
+
+// 카테고리로 편의점을 검색합니다
+ps.categorySearch('CS2', placesSearchCB, {useMapBounds:true}); 
+
+// 키워드 검색 완료 시 호출되는 콜백함수 입니다
+function placesSearchCB (data, status, pagination) {
+    if (status === kakao.maps.services.Status.OK) {
+        for (var i=0; i<data.length; i++) {
+            displayMarker(data[i]);    
+        }       
+    }
+}
+
 
 // 지도에 마커를 표시하는 함수입니다
 function displayMarker(place) {

@@ -16,7 +16,7 @@ var map = new kakao.maps.Map(mapContainer, mapOption);
 // 장소 검색 객체를 생성합니다
 var ps = new kakao.maps.services.Places(map); 
 
-// 카테고리로 편의점을 검색합니다
+// 카테고리로 은행을 검색합니다
 ps.categorySearch('CS2', placesSearchCB, {useMapBounds:true}); 
 
 // 키워드 검색 완료 시 호출되는 콜백함수 입니다

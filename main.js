@@ -266,16 +266,12 @@ mobileMenu.addEventListener('click', () => {
 
 
 // youtube iframe API
-// 2. This code loads the IFrame Player API code asynchronously.
 let tag = document.createElement('script');
 
 tag.src = "https://www.youtube.com/iframe_api";
 let firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-
-// 3. This function creates an <iframe> (and YouTube player)
-//    after the API code downloads.
 
 
 
@@ -299,29 +295,14 @@ function onYouTubeIframeAPIReady() {
         }
 }
 
-// var section = {
-//     start: 225, // 반복 시작 시간(초)
-//     end: 244 // 반복 종료 시간(초)
-//   };
-
-
-
-// function onPlayerReady(event) {
-//     player.seekTo(section.start);
-//     player.playVideo();
-//   }
-  
-//   function onPlayerStateChange(event) {
-//     if (event.data == YT.PlayerState.PLAYING) {
-//       var duration = section.end - section.start;
-//       setTimeout(restartVideoSection, duration * 1000);
-//     }
-//   }
-  
-//   function restartVideoSection() {
-//     player.seekTo(section.start);
-//   }
 
 
 // Kakao Map
 
+var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+var options = { //지도를 생성할 때 필요한 기본 옵션
+	center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+	level: 3 //지도의 레벨(확대, 축소 정도)
+};
+
+var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴

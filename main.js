@@ -314,7 +314,7 @@ var map = new kakao.maps.Map(mapContainer, mapOption);
 // 장소 검색 객체를 생성합니다
 var ps = new kakao.maps.services.Places(map); 
 
-// 카테고리로 은행을 검색합니다
+// 카테고리로 편의점을 검색합니다
 ps.categorySearch('CS2', placesSearchCB, {useMapBounds:true}); 
 
 // 키워드 검색 완료 시 호출되는 콜백함수 입니다
@@ -336,20 +336,17 @@ if (navigator.geolocation) {
         var lat = position.coords.latitude, // 위도
             lon = position.coords.longitude; // 경도
         
-        var locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
-            message = '<div style="padding:5px;">You Are Here!✨ </div>'; // 인포윈도우에 표시될 내용입니다
+        var locPosition = new kakao.maps.LatLng(lat, lon); // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
         
         // 마커와 인포윈도우를 표시합니다
-        displayMarker(locPosition, message);
+        displayMarker(locPosition);
             
       });
     
 } else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
     
-    var locPosition = new kakao.maps.LatLng(33.450701, 126.570667),    
-        message = '❌ 현재위치를 찾을 수 없습니다 ❌'
-        
-    displayMarker(locPosition, message);
+    var locPosition = new kakao.maps.LatLng(33.450701, 126.570667);
+        alert('❌ 현재위치를 찾을 수 없습니다 ❌');
 }
 
 // 지도에 마커를 표시하는 함수입니다

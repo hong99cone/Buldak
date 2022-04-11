@@ -315,7 +315,7 @@ var map = new kakao.maps.Map(mapContainer, mapOption);
 var ps = new kakao.maps.services.Places(map); 
 
 // 카테고리로 은행을 검색합니다
-ps.categorySearch('BK9', placesSearchCB, {useMapBounds:true}); 
+ps.categorySearch('CS2', placesSearchCB, {useMapBounds:true}); 
 
 // 키워드 검색 완료 시 호출되는 콜백함수 입니다
 function placesSearchCB (data, status, pagination) {

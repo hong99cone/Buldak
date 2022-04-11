@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- swiper css & js cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" media="all and (max-width:480px)" href="/styeM.css">
+    <script defer src="/main.js"></script>    
+    <title>Buldak</title>
+</head>
+
+<body>
+
+    <!-- Navigation - gnb -->
+    <div class="gnb">
+        <div class="menu__button-mobile">
+            <div class="line_1"></div>
+            <div class="line_2"></div>
+            <div class="line_3"></div>
+        </div>
+        <div class="gnb__container">
+            <ul class="menu">
+                <li data-link="#home">Home</li>
+                <li data-link="#story">Stroy</li>
+                <li data-link="#collabo">Collabo</li>
+                <li data-link="#ramens">Ramens Timeline</li>
+                <li data-link="#buldak">Buldak Score</li>
+            </ul>
+            <div class="select">
+                <div class=select__container">
+                    <div class="select__box">
+                        <button class="label">KR<span class="arrow-bottom"></span></button>
+                        <ul class="option-list">
+                            <li>ENG</li>
+                            <li>JP</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home -->
+    <section class="one" id="home">
+        <div class="container">
+            <div class="text">
+                <div class="container__title">
+                    <h1 class="text__title">불타오르게 위대하게</h1>
+                </div>
+
+                <div class="wrapper__des">
+                    <p class="text__des"> 당신의 <span>심장</span>을 뛰게 할 전율의 무대, 대한민국 라면 역사상 가장 압도적인 흥행작
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="content">
+                <div class="content__container">
+                    <div class="content__item-review">
+                        <div class="item item-top hidden">
+                            <div class="review">
+                                <p class="review-kor">노래부터 영상미까지 정말 어메이징</p>
+                                <p class="review-eng">“From the song to the animation It's super amazing”
+                                </p>
+                                <p class="reiview-name">-Ella Barandino-</p>
+                            </div>
+                            <div class="review">
+                                <p class="review-kor">아직도 이 걸작을 잊을 수 없다</p>
+                                <p class="review-eng">“Still cant get over this epic masterpiece”</p>
+                                <p class="review-name">-Ella Barandino- </p>
+                            </div>
+                        </div>
+                        <div class="item item-middle hidden">
+                            <div class="review">
+                                <p class="review-kor">나는 이 음악이 멜론에 있길바래 <br>
+                                    분명 1위를 할거야</p>
+                                <p class="review-eng">“ I wish they were in the melon.<br>
+                                    They were going to be ranked No. 1.”</p>
+                                <p class="review-name">-MARIA-</p>
+                            </div>
+                            <div class="review">
+                                <p class="review-kor">나는 이 스타일이 좋아, <br>
+                                    다른 음악과는 다르다고!</p>
+                                <p class="review-eng">“I like this style. It's different from<br>
+                                    the rest of the musical type ”</p>
+                                <p class="review-name">-AMMU-</p>
+                            </div>
+                        </div>
+                        <div class="item item-bottom hidden">
+                            <div class="review">
+                                <p class="review-kor">엄청 웅장하다... 심장을 울린다....</p>
+                                <p class="review-eng">“It's magnificent.
+                                    ”</p>
+                                <p class="review-name">-SH-</p>
+                            </div>
+                            <div class="review">
+                                <p class="review-kor">불닭 정말 사랑해 인도네시아로부터</p>
+                                <p class="review-eng">“Buldak I Love you....from indonesia...”</p>
+                                <p class="review-name">-Indonesia-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__item-btn">
+                        <div class="img-stars">
+                            <img src="/img/star.png" alt="stars">
+                        </div>
+                        <a class="button btn-musical" href="https://www.youtube.com/watch?v=-pMAHu9i180"
+                            target="_blank">불닭뮤지컬
+                            절찬리 상영중</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- popup -->
+    <div class="popup__background">
+        <div class="popup__window">
+            <div class="popup">
+                <button id="close" class="btn-close"></button>
+                <img src="/img/modal_img.jpg" alt="#">
+            </div>
+        </div>
+    </div>
+    <!-- Story -->
+    <section class="two" id="story">
+        <div class="content">
+            <div class="content__container">
+                <div class="content__img">
+                    <img class="content__img-crown" src="/img/img-crown.png" alt="crown">
+                </div>
+                <div class="content__text">
+                    <p>불닭의 <span>"매운맛"</span>을 세계에 증명하다!</p>
+                    <p>누적판매수 30억개 돌파! 다양한 맛과 장르를 뛰어넘는 마성의 <span>"불닭볶음면 뮤지컬"</span> 탄생 StORy....★</p>
+                </div>
+                <div class="content__item">
+                    <img src="/img/buldak-stage.png" alt="buldak_cup" class="content__img-buldak">
+                    <button id="modal" class="btn-modal">위대한 Story 확인하기</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collabo -->
+    <section class="three" id="collabo">
+        <div class="content">
+            <div class="content__title">
+                <h1 class="title">한계를 넘는 Collaboration</h1>
+            </div>
+
+            <div class="content__item">
+                <div class="item__container">
+                    <div class="thumb">
+                        <div class="thumb__img-beer">
+                            <a href="https://www.instagram.com/p/CVkQ1i3vKuM/?utm_source=ig_web_copy_link" class="wrapper__txt">
+                                <p class="thumb__txt">화끈달달 불닭맥주</p>
+                                <p class="thumb__txt-hide">지금 바로 확인하러가기</p>
+                                <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="thumb double">
+                        <div class="thumb-half">
+                            <div class="thumb__img-camping">
+                                <div class="wrapper__txt">
+                                    <p class="thumb__txt">불닭캠핑세트</p>
+                                    <p class="thumb__txt-hide">지금 바로 확인하러가기</p>
+                                    <div class="arrow">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumb-half">
+                            <div class="thumb__img-edition">
+                                <div class="wrapper__txt">
+                                    <p class="thumb__txt">불타는에디션</p>
+                                    <p class="thumb__txt-hide">지금 바로 확인하러가기</p>
+                                    <div class="arrow">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <div class="thumb__img-bed">
+                            <div class="wrapper__txt">
+                                <p class="thumb__txt">화끈포근 불닭이블세트</p>
+                                <p class="thumb__txt-hide">지금 바로 확인하러가기</p>
+                                <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumb double">
+                        <div class="thumb-half">
+                            <div class="thumb__img-naebok">
+                                <div class="wrapper__txt">
+                                    <p class="thumb__txt">화끈따듯 불닭내복</p>
+                                    <p class="thumb__txt-hide">지금 바로 확인하러가기</p>
+                                    <div class="arrow">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumb-half">
+                            <div class="thumb__img-note">
+                                <div class="wrapper__txt">
+                                    <p class="thumb__txt">불닭문방구</p>
+                                    <p class="thumb__txt-hide">지금 바로 확인하러가기</p>
+                                    <div class="arrow">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <div class="thumb__img-toothpaste">
+                            <div class="wrapper__txt">
+                                <p class="thumb__txt">화끈상쾌 불닭치약</p>
+                                <p class="thumb__txt-hide">지금 바로 확인하러가기</p>
+                                <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Ramens Timeline -->
+    <section class="four" id="ramens">
+        <div class="content inner">
+            <div class="content__title">
+                <h1 class="title">불타오르는면</h1>
+            </div>
+            <div class="content__carousel">
+                <div class="carousel-control">
+                    <button class="btn__arrow-left"></button>
+                    <button class="btn__arrow-right"></button>
+                </div>
+                <div class="carousel-container">
+                    <div class="items">
+                        <ul class="items__cards-top">
+                            <li class="card">
+                                <ul class="card__text">
+                                    <li class="txt-exp">
+                                        <span>
+                                            중독되는 매운맛 불닭볶음면 등장이닭!!
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="card-year">
+                                    <span>2012년</span>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <ul class="card__text">
+                                    <li class="txt-exp">
+                                        <span>
+                                            여름한정판! 차갑게 비비는 쿨불닭볶음면
+                                        </span>
+                                    </li>
+                                    <li class="txt-exp">
+                                        <span>
+                                            걸쭉한 신개념 국물 불닭볶음탕면 출시닭!
+                                        </span>
+                                    </li>
+                                    <li class="txt-exp">
+                                        <span>
+                                            풍미가득 화끈한맛 치즈불닭볶음면 출시닭!
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="card-year">
+                                    <span>2016년</span>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <ul class="card__text">
+                                    <li class="txt-exp">
+                                        <span>
+                                            마라향 가득 색다른 매운맛 마라불닭볶음면
+                                        </span>
+                                    </li>
+                                    <li class="txt-exp">
+                                        <span>
+                                            카레향과 조화를 이룬 커리불닭볶음면
+                                        </span>
+                                    </li>
+                                    <li class="txt-exp">
+                                        <span>
+                                            매운맛의 최강자 핵불닭볶음면 출시닭!
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="card-year">
+                                    <span>2017년</span>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <ul class="card__text">
+                                    <li class="txt-exp">
+                                        <span>
+                                            깜찍뽀짝 한정판 어피치 까르보 불닭볶음면
+                                        </span>
+                                    </li>
+                                    <li class="txt-exp">
+                                        <span>
+                                            매콤달콤 떡볶이 소스 쫄볶이불닭볶음면
+                                        </span>
+                                    </li>
+                                    <li class="txt-exp">
+                                        <span>
+                                            짜장과 불닭의 만남 짜장불닭볶음면 출시닭!
+                                        </span>
+                                    </li>
+                                    <li class="txt-exp">
+                                        <span>
+                                            부드러운 크림의 까르보불닭볶음면 출시닭!
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="card-year">
+                                    <span>2018년</span>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <ul class="card__text">
+                                    <li class="txt-exp">
+                                        <span>
+                                            불닭7주년 한정판 핵불닭볶음면 미니
+                                        </span>
+                                    </li>
+                                    <li class="txt-exp">
+                                        <span>
+                                            맵기도 칼로리도 Light! 라이트 불닭볶음면
+                                        </span>
+                                    </li>
+                                    <li class="txt-exp">
+                                        <span>
+                                            토마토의 새콤한맛 미트스파게티 불닭볶음면
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="card-year">
+                                    <span>2019년</span>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <ul class="card__text">
+                                    <li class="txt-exp">
+                                        <span>
+                                            진로와의 콜라보, 초깔끔한 김치 불닭볶음면
+                                        </span>
+                                    </li>
+                                    <li class="txt-exp">
+                                        <span>
+                                            가벼운 맵기부터 화끈함까지 도전!불닭비빔면
+                                        </span>
+                                    </li>
+                                    <li class="txt-exp">
+                                        <span>
+                                            크림맛이 진해진 크림 까르보 불닭 출시닭!
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="card-year">
+                                    <span>2020년</span>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <ul class="card__text">
+                                    <li class="txt-exp">
+                                        <span>
+                                            맵기를 절반으로 러블리 핫 불닭 출시닭!
+                                        </span>
+                                    </li>
+                                    <li class="txt-exp">
+                                        <span>
+                                            꾸덕함 + 크리미함 = K-로제불닭 출시닭!
+                                        </span>
+                                    </li>
+                                    <li class="txt-exp">
+                                        <span>
+                                            치즈의 풍미가 더 진한 4가지치즈 불닭 출시닭!
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="card-year">
+                                    <span>2016년</span>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <ul class="card__text">
+                                    <li class="txt-exp">
+                                        <span>
+                                            위대하게 불타오르게 .....ing
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="card-year">
+                                    <span>2022년</span>
+                                </div>
+
+                            </li>
+
+                        </ul>
+                        <ul class="items__cards-bot">
+                            <li class="card">
+                                <ul class="card__items">
+                                    <li class="item-double">
+                                        <div class="img">
+                                            <img src="/img/img-buldak-250x250.png" alt="buldak-origin"
+                                                class="img-bongji">
+                                        </div>
+                                        <div class="img">
+                                            <img src="/img/img-buldak-cup-250x250.png" alt="buldak-origin-cup"
+                                                class="img-cup">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="card">
+                                <ul class="card__items">
+                                    <li class="item-double">
+                                        <div class="img">
+                                            <img src="/img/img-cheese-250x250.png" alt="buldak-cheese"
+                                                class="img-bongji">
+                                        </div>
+                                        <div class="img">
+                                            <img src="/img/img-cheese-cup-250x250.png" alt="buldak-cheese-cup"
+                                                class="img-cup">
+                                        </div>
+                                    </li>
+                                    <li class="item-double">
+                                        <div class="img">
+                                            <img src="/img/img-tang-250x250.png" alt="buldak-tang" class="img-bongji">
+                                        </div>
+                                        <div class="img">
+                                            <img src="/img/img-tang-cup-250x250.png" alt="buldak-tang-cup"
+                                                class="img-cup">
+                                        </div>
+                                    </li>
+                                    <li class="item-single">
+                                        <div class="img">
+                                            <img src="/img/img-cool-250x250.png" alt="buldak-cool" class="img-bongji">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="card">
+                                <ul class="card__items">
+                                    <li class="item-double">
+                                        <div class="img">
+                                            <img src="/img/img-hack-250x250.png" alt="buldak-hack" class="img-bongji">
+                                        </div>
+                                        <div class="img">
+                                            <img src="/img/img-hack-cup-250x250.png" alt="buldak-hack-cup"
+                                                class="img-cup">
+                                        </div>
+                                    </li>
+                                    <li class="item-double">
+                                        <div class="img">
+                                            <img src="/img/img-mara-250x250.png" alt="buldak-mara" class="img-bongji">
+                                        </div>
+                                        <div class="img">
+                                            <img src="/img/img-curry-250x250.png" alt="buldak-curry" class="img-bongji">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="card">
+                                <ul class="card__items">
+                                    <li class="item-double">
+                                        <div class="img">
+                                            <img src="/img/img-carbo-250x250.png" alt="buldak-carbo" class="img-bongji">
+                                        </div>
+                                        <div class="img">
+                                            <img src="/img/img-carbo-cup-250x250.png" alt="buldak-carbo-cup"
+                                                class="img-cup">
+                                        </div>
+                                    </li>
+                                    <li class="item-double">
+                                        <div class="img">
+                                            <img src="/img/img-jjajang-250x250.png" alt="buldak-jjajang"
+                                                class="img-bongji">
+                                        </div>
+                                        <div class="img">
+                                            <img src="/img/img-jjanjang-cup-250x250.png" alt="buldak-jjajang-cup"
+                                                class="img-cup">
+                                        </div>
+                                    </li>
+                                    <li class="item-double">
+                                        <div class="img">
+                                            <img src="/img/img-apeach-250x250.png" alt="buldak-apeach"
+                                                class="img-bongji">
+                                        </div>
+
+                                        <div class="img">
+                                            <img src="/img/img-jjol-cup-250x250.png" alt="buldak-jjo;-cup"
+                                                class="img-cup">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="card">
+                                <ul class="card__items">
+                                    <li class="item-double">
+                                        <div class="img">
+                                            <img src="/img/img-meat-250x250.png" alt="buldak-meat" class="img-bongji">
+                                        </div>
+                                        <div class="img">
+                                            <img src="/img/img-meat-cup-250x250.png" alt="buldak-meat-cup"
+                                                class="img-cup">
+                                        </div>
+                                    </li>
+                                    <li class="item-double">
+                                        <div class="img">
+                                            <img src="/img/img-light-250x250.png" alt="buldak-light" class="img-bongji">
+                                        </div>
+                                        <div class="img">
+                                            <img src="/img/img-mini-250x250.png" alt="buldak-mini" class="img-bongji">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="card">
+                                <ul class="card__items">
+                                    <li class="item-double">
+                                        <div class="img">
+                                            <img src="/img/img-cream-250x250.png" alt="buldak-cream" class="img-bongji">
+                                        </div>
+                                        <div class="img">
+                                            <img src="/img/img-cream-cup-250x250.png" alt="buldak-cream-cup"
+                                                class="img-cup">
+                                        </div>
+                                    </li>
+                                    <li class="item-double">
+                                        <div class="img">
+                                            <img src="/img/img-kimchi-250x250.png" alt="buldak-kimchi"
+                                                class="img-bongji">
+                                        </div>
+                                        <div class="img">
+                                            <img src="/img/img-bibim-250x250.png" alt="buldak-bibim" class="img-bongji">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="card">
+                                <ul class="card__items">
+                                    <li class="item-double">
+                                        <div class="img">
+                                            <img src="/img/img-fcheese-250x250.png" alt="buldak-fcheese"
+                                                class="img-bongji">
+                                        </div>
+                                        <div class="img">
+                                            <img src="/img/img-fcheese-cup-250x250.png" alt="buldak-fcheese-cup"
+                                                class="img-cup">
+                                        </div>
+                                    </li>
+                                    <li class="item-double">
+                                        <div class="img">
+                                            <img src="/img/img-rose-250x250.png" alt="buldak-rose" class="img-bongji">
+                                        </div>
+                                        <div class="img">
+                                            <img src="/img/img-rose-cup-250x250.png" alt="buldak-rose-cup"
+                                                class="img-cup">
+                                        </div>
+                                    </li>
+                                    <li class="item-single">
+                                        <div class="img">
+                                            <img src="/img/img-lovely-250x250.png" alt="buldak-lovely"
+                                                class="img-bongji">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="card">
+                                <ul class="card__items">
+                                    <li class="item-double">
+                                        <div class="img">
+                                            <img src="/img/img-buldak-250x250.png" alt="buldak-origin"
+                                                class="img-bongji-shadow">
+                                        </div>
+                                        <div class="img">
+                                            <img src="/img/img-buldak-cup-250x250.png" alt="buldak-origin-cup"
+                                                class="img-cup-shadow">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Buldak Score -->
+    <section class="five" id="buldak">
+        <div class="content">
+            <div class="content__container">
+                <div class="content__text-ladder">
+                    <h2 class="text__title">내 몸속 불닭지수</h2>
+                    <p class="text__note">즐겨먹는 불닭제품으로 알아보는 내 혈관 속 불닭지수 </p>
+                </div>
+                <div class="content__item">
+                    <div class="ladder__container">
+                        <div class="ladder__button">
+                            <ul class="button__list">
+                                <li class="button-ramen">
+                                    <p class="hover-text">핵 불닭</p>
+                                    <img src="/img/img-hack-250x250.png" alt="level1-hack">
+                                </li>
+                                <li class="button-ramen">
+                                    <p class="hover-text">불닭</p>
+                                    <img src="/img/img-buldak-250x250.png" alt="level2-origin">
+                                </li>
+                                <li class="button-ramen">
+                                    <p class="hover-text">까르보 불닭</p>
+                                    <img src="/img/img-cream-250x250.png" alt="level3-carbo">
+                                </li>
+                                <li class="button-ramen">
+                                    <p class="hover-text">4가지치즈 불닭</p>
+                                    <img src="/img/img-fcheese-250x250.png" alt="level4-fcheese">
+                                </li>
+                                <li class="button-ramen">
+                                    <p class="hover-text">러블리 핫 불닭</p>
+                                    <img src="/img/img-lovely-250x250.png" alt="level5-lovely">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ladder__main">
+                            <canvas id="canvas-ladder" class="ladder"></canvas>
+                        </div>
+                        <div class="ladder__button">
+                            <ul class="button__list">
+                                <li class="button-result">
+                                    <div class="box percent-55">
+                                        <div class="text__wrapper">
+                                            <p class="text-percent">55%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="button-result">
+                                    <div class="box percent-77">
+                                        <div class="text__wrapper">
+                                            <p class="text-percent">77%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="button-result">
+                                    <div class="box percent-33">
+                                        <div class="text__wrapper">
+                                            <p class="text-percent">33%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="button-result">
+                                    <div class="box percent-99">
+                                        <div class="text__wrapper">
+                                            <p class="text-percent">99%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="button-result">
+                                    <div class="box percent-88">
+                                        <div class="text__wrapper">
+                                            <p class="text-percent">88%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ladder__result">
+                            <div class="wrapper">
+                                <p class="result__txt on">
+                                    불닭지수 <span>99%</span> 당신의 맵부심은 근거있는 자신감이다
+                                </p>
+                                <p class="result__txt">
+                                    불닭지수 <span>88%</span> 당신의 맵부심은 칭찬할 만 하다
+                                </p>
+                                <p class="result__txt">
+                                    불닭지수 <span>77%</span> 당신의 맵부심은 평균치 이상이다
+                                </p>
+                                <p class="result__txt">
+                                    불닭지수 <span>33%</span> 당신의 맵부심은 있는듯 없다
+                                </p>
+                                <p class="result__txt">
+                                    불닭지수 <span>55%</span> 당신의 맵부심은 평균이다
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper swiper-recipe">
+                <div class="swiper-wrapper recipe">
+                    <div class="swiper-slide">
+                        <h2 class="text__title">
+                            <span class="title-border">불닭맵고수</span> 추천레시피
+                        </h2>
+                        <div class="content__vid">
+                            <div class="vid__wrapper">
+                                <div class="youtube" id="player1" data-url="T-NVSeBt9pU"></div>
+                            </div>
+
+                            <div class="vid__text on">
+                                <p class="vid-title">불닭젤리</p>
+                                <p class="vid-exp">맵고수는 젤리도 화끈한 젤리만 먹어 맵고수는 앙큼달콤 젤리는 안먹는다고</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="text__title">
+                            <span class="title-border">불닭맵중수</span> 추천레시피
+                        </h2>
+                        <div class="content__vid">
+                            <div class="vid__wrapper">
+                                <div class="youtube" id="player2" data-url="_WUFxyOWIII"></div>
+                            </div>
+
+                            <div class="vid__text">
+                                <p class="vid-title">불닭어묵탕</p>
+                                <p class="vid-exp">이제 집밥으로 불닭소스 넣어먹는정도는 괜찮다고</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="text__title">
+                            <span class="title-border">불닭맵찔이</span> 추천레시피
+                        </h2>
+                        <div class="content__vid">
+                            <div class="vid__wrapper">
+                                <div class="youtube" id="player3" data-url="0nZf5SSJbxg"></div>
+                            </div>
+
+                            <div class="vid__text">
+                                <p class="vid-title">불닭디저트</p>
+                                <p class="vid-exp">화끈하지만 달달하게 매운맛을 중화시켜준다고</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Map-->
+    <section class="six">
+        <div class="content">
+            <div class="content__container">
+                <div class="content__text">
+                    <p>불닭...? 원한다면 주도록 하지 <span>이세계 어느 편의점</span>에나 존재하니까</p>
+                    <p>지금 가장 가까운 위치의 편의점</p>
+                </div>
+                <div id="map" class="content__map">
+                    <div class="map__wrapper">
+                        <!-- 카카오맵 - 지도퍼가기 -->
+                        <!-- 1. 지도 노드 -->
+                    </div>
+                </div> 
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="content__box">
+            <ul class="item__box-menu">
+                <li><a href="https://www.samyangfoods.com/kor/brand/spicyRamen.do" target="_balnk">BrandInfo</a></li>
+                <li><a href="" target="_balnk">ProductShop</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <div class="item__box-icons">
+                <div class="item-family__box">
+                    <div class="select__box">
+                        <button class="label">Family Site <span class="arrow-bottom"></span></button>
+                        <ul class="option-list">
+                            <li><a href="https://www.samyangfoods.com/kor/index.do" target="_balnk">삼양식품
+                                </a></li>
+                            <li><a href="https://ko-kr.facebook.com/samyangfoods/" target="_balnk">삼양식품
+                                    페이스북</a></li>
+                            <li><a href="https://www.instagram.com/samyangfoods/" target="_balnk">삼양식품
+                                    인스타</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="item-icon__box">
+                    <li>
+                        <a href="https://www.youtube.com/c/%EB%B6%88%EB%8B%ADTVBuldakTV">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ilovebuldak/?hl=ko">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </footer>
+</body>
+
+
+</html>

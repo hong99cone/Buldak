@@ -1,0 +1,422 @@
+@charset 'utf-8';
+
+* {
+    font-size: 12px;
+}
+
+
+body {
+    min-width: 90%;
+}
+
+.inner {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.gnb {
+    min-width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+    position: fixed;
+    top: 0;
+}
+
+.gnb__container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.gnb .menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 3.333rem;
+    padding: 0 0 1.25rem;
+    background-color: rgba(0,0,0,1);
+}
+
+.gnb .menu.red {
+    background-color: var(--dark-red-color);
+    transition: all 0.5s ease-in;
+}
+
+.gnb .menu li {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gnb .select {
+    display: none;
+}
+
+.gnb .menu.toggle {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__button-mobile {
+    width: 2rem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+
+    z-index: 99;
+}
+
+.menu__button-mobile div{
+    background-color: var(--white-color);
+    width: 100%;
+    height: 1px; 
+    transition: all 0.5s;
+
+}
+
+.menu__button-mobile .line_2 {
+    margin: 0.66rem 0;
+}
+
+
+.toggle .line_1 {
+    transform: rotate(-45deg) translateX(-6px) translateY(7px);
+}
+
+.toggle .line_2 {
+    opacity: 0;
+}
+
+.toggle .line_3 {
+    transform: rotate(45deg) translateX(-6px) translateY(-7px);
+}
+
+.gnb .menu li:nth-child(2n) {
+    margin: 1.25rem auto;
+}
+
+
+/* section one */
+section.one {
+    background-size: 83.33rem;
+    background-position: 50% 100%;
+    min-height: 75rem;
+}
+
+section.one .mobile__review-control {
+    display: block;
+}
+
+
+section.one .text__des {
+    width: 70%;
+    margin: 0 auto;
+}
+
+section.one .content__item-review {
+    padding-left: 2rem;
+    flex-direction: row;
+    min-height: auto;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+section.one .content__item-review::-webkit-scrollbar{ display:none; }
+
+section.one .review {
+    width: 20.83rem;
+    transform: translateX(20%);
+}
+
+section.one .content__item-review .swipe {
+    color: var(--white-color);
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+
+section.one .item-top,
+section.one .item-middle,
+section.one .item-bottom {
+    align-items: center;
+}
+
+section.one .item-top .review:nth-of-type(1),
+section.one .item-middle .review:nth-of-type(1),
+section.one .item-bottom .review:nth-of-type(1) {
+    margin-right: 2rem;
+}
+
+
+.img-stars {
+    max-width: 31.66rem;
+    margin: 0 auto 1rem;
+}
+
+.img-stars img {
+    max-width: 31.66rem;
+    width: 80%;
+}
+
+.btn-musical {
+    padding: 0.5rem 3.33rem;
+}
+
+
+section.two .content {
+    margin: 0 auto
+}
+
+section.two .content__container {
+    padding: 0 0 5rem;
+}
+
+section.two .content__text {
+    width: 80%;
+}
+
+section.two .content__item {
+    display: flex;
+}
+
+section.two .content__img-buldak {
+    width: 75%;
+    max-width: 37.5rem;
+    margin: 0 auto;
+}
+
+/* popup close */
+.popup {
+    width: 90%;
+}
+
+/* section three collabo */
+
+section.three .content {
+    min-width: 100%;
+    padding: 0 0 10rem;
+}
+
+section.three .content__title {
+    padding: 4rem 0;
+}
+
+section.three .content__item {
+    padding: 0 1rem;
+}
+
+section.three .item__container {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+section.three .thumb {
+    width : 48%;
+    padding: 0.83rem 0 0;
+}
+
+
+.three .thumb-half:nth-child(2n) {
+    padding: 0.83rem 0 0;
+}
+
+section.three .thumb.double {
+    top: 0;
+    margin: 0;
+}
+
+div[class^="thumb__img"] {
+    background-position: center;
+    background-size: cover;
+}
+
+section.three::before {
+    background-position: bottom;
+}
+
+/* section-fourr*/
+section.four {
+    min-height: auto;
+}
+
+
+.carousel-container {
+    width: 90%;
+    height: auto;
+}
+
+.card__text {
+    width: 90%;
+}
+
+
+.items__cards-top  li,
+.card__items li {
+    width: 23.33rem;
+}
+
+
+.card-year span {
+    font-size: 1.5rem;
+}
+
+.card-year::after {
+    display: none;
+}
+
+
+.card__items .item-single {
+    width: 12.5rem;
+}
+
+.card__items .img {
+    width: 10.83rem;
+    height: 10.83rem;
+}
+
+.items__cards-top>li,
+.items__cards-bot>li {
+    margin-right: 0.83rem;
+    padding-right: 0;
+}
+
+
+/* section fivw ghost-leg */
+
+section.five {
+    min-width: 100%;
+    min-height: auto;
+}
+
+section.five .content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section.five::before,
+section.five::after {
+    top: 60%;
+    background-size: 13rem;
+}
+
+.ladder__container {
+    width: 100%;
+}
+
+
+.button-ramen img {
+    width: 100%;
+    max-width: 10rem;
+}
+
+
+
+.result__txt {
+    padding: 0.23rem 1.2rem;
+}
+
+/* recipe video */
+
+.swiper-recipe {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-recipe .swiper-pagination {
+    display: block;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--white-color);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--dark-red-color);
+}
+
+.content__vid .youtube {
+    width: 100%;
+    height: auto;
+}
+
+.content__vid {
+    width: 90%;
+    margin: 4rem auto ; 
+}
+
+.vid__text {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    display: none;
+}
+
+
+/* section.six */
+
+section.six {
+    min-height: auto;
+    padding: 4rem 0;
+}
+
+section.six .content__container {
+    width: 85%;
+}
+
+section.six .content__text {
+    flex-direction: column;
+}
+
+
+/* footer */
+footer {
+    height: auto;
+    padding: 2rem 0 ;
+}
+
+
+footer .content__box{
+    flex-direction: column;
+    min-height: unset;
+}
+
+footer .item-family__box {
+    margin: 2rem 0;
+}
+
+footer .select__box{
+    height: 1.8rem;
+}
+
+footer .select__box.active .option-list {
+    max-height: 7rem;
+}
+
+footer .item__box-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+footer i {
+    font-size: 2rem;
+}
+

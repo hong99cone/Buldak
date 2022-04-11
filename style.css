@@ -1164,11 +1164,6 @@ section.six .content__text {
     justify-content: space-between;
 }
 
-section.six .content__map {
-    width: 62.5rem;
-    height: 36.5rem;
-}
-
 /* footer */
 
 footer {

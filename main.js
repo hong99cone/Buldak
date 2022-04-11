@@ -311,6 +311,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 // 지도를 생성합니다    
 var map = new kakao.maps.Map(mapContainer, mapOption); 
 
+
 // 현재위치를 받아옴
 // HTML5의 geolocation으로 사용할 수 있는지 확인합니다 
 // if (navigator.geolocation) {
@@ -348,7 +349,6 @@ function placesSearchCB (data, status, pagination) {
         }       
     }
 }
-
 
 // 지도에 마커를 표시하는 함수입니다
 function displayMarker(place) {

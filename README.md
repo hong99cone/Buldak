@@ -3,7 +3,7 @@
 </br>
 
 # 불닭볶음면 프로모션 :gem:
-<img src="README__img/buldak_Thumbnail.png" style="width:850px">
+<img src="README__img/buldak_thumbnail.png" style="width:850px">
 <img src="README__img/buldak_mockup.png" style="width:850px">
 
  <img alt="HTML5" src ="https://img.shields.io/badge/HTML-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/> <img alt="CSS3" src ="https://img.shields.io/badge/CSS-1572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white"/> <img alt="JS" src ="https://img.shields.io/badge/JavaScript-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=white"/>  
@@ -39,10 +39,9 @@
 * * * 
 
 ## 📝 Description
-- 뮤지컬 컨셉을 기반으로 불닭브랜드의 면계열 제품을 소개
-- 레이아웃
-- 브랜드 메인색상인 블랙과 신뢴감을 주는 초록색 사용  
-- 심플하고 세련된 오디오 기기들이 강조될 수있도록 디자인과 퍼블리싱    
+- 뮤지컬 컨셉을 기반으로 불닭볶음면의 제품을 소개하는 원페이지
+- 불닭볶음면의 연대기를 볼 수있는 타임라인, 불닭 레시피 등 과 같은 다양한 컨텐츠를 배치    
+- 브랜드 메인색상인 블랙과 레드를 사용  
 
 </br>
 </br>
